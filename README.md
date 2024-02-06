@@ -1,5 +1,8 @@
-### Hi there 👋
-
+### Hi there, I'm Abijith 👋
+🔭 I’m currently working on a personal portfolio website using HTML, CSS, and PHP
+✅ I developed a Unity simulation using C# and Python for pedestrian-autonomous vehicle interaction and created a choice-based video game using Javascript
+🌱 I’m currently learning web development, computer security, and object oriented programming and design
+🔎 I'm seeking Software Development internship opportunities for Summer 2024! Here is my resume
 <!--
 **wasabijith/wasabijith** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
