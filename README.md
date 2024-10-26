@@ -7,10 +7,11 @@ I am an avid computer programmer pursuing an undergraduate degree in Computer Sc
 - 🔭 I’m currently working on a personal portfolio website using HTML, CSS, and PHP
 - ✅ I developed a Unity simulation using C# and Python for pedestrian-autonomous vehicle interaction
 - ✅ I created a choice-based video game using Javascript based on a short story I wrote
-- 🌱 I’m currently learning web development, computer security, and object oriented programming and design
-- 🔎 I'm seeking Software Engineering internship opportunities for Summer 2024! Here is my [resume](https://github.com/wasabijith/resume/blob/main/Abi%20Resume.pdf)
+- 🌱 I’m currently learning Advanced Analysis of Algorithms, Computer Architecture, Database, Computer Vision, and Big Data Computing
+- 🔎 I'm seeking Software Engineering full-time opportunities for Summer 2025! Here is my [resume](https://github.com/wasabijith/resume/blob/main/Abi%20Resume.pdf)
 
 ## You can reach me here 👇
+My personal portfolio website: [Click here](https://obi2.kean.edu/~manikaab@kean.edu/home.html) 
 <!--
 **wasabijith/wasabijith** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
