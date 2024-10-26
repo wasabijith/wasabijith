@@ -1,7 +1,7 @@
 # Hi there, I'm Abi 🐝
 
 ## Here's a little bit about me 😎
-I am an avid computer programmer pursuing an undergraduate degree in Computer Science, with experience in software development. I want to apply my Java, Javascript, HTML, and C# knowledge to a Software Engineering Intern role.
+I am an avid computer programmer pursuing an undergraduate degree in Computer Science, with experience in software development. I want to apply my Java, Javascript, HTML, and C# knowledge to a Software Engineering role.
 
 ## Here's what's happening right now 🕒
 - 🔭 I’m currently working on a personal portfolio website using HTML, CSS, and PHP
