@@ -8,7 +8,7 @@ I am an avid computer programmer pursuing an undergraduate degree in Computer Sc
 - ✅ I developed a Unity simulation using C# and Python for pedestrian-autonomous vehicle interaction
 - ✅ I created a choice-based video game using Javascript based on a short story I wrote
 - 🌱 I’m currently learning Advanced Analysis of Algorithms, Computer Architecture, Database, Computer Vision, and Big Data Computing
-- 🔎 I'm seeking Software Engineering full-time opportunities for Summer 2025! Here is my [resume](https://github.com/wasabijith/resume/blob/main/Abi%20Resume.pdf)
+- 🔎 I'm seeking Software Engineering full-time opportunities for Summer 2025! Here is my [resume](https://github.com/wasabijith/resume/blob/main/Abijith_Manikandan_Resume.pdf)
 
 ## You can reach me here 👇
 My personal portfolio website: [Click here](https://obi2.kean.edu/~manikaab@kean.edu/home.html) 
