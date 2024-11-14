@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/Happy Face.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="navbar"></div> <!-- This is where the navbar will be included -->
+    <script>
+        // Fetch and include the navbar using JavaScript
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <section id="home" class="section">
+        <h1><span id="typed-text"></span><span id="cursor">|</span>I am Abijith Manikandan </h1>
+        <div id="image-carousel" class="carousel slide mt-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                        class="rounded-circle" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.photographycourse.net/wp-content/uploads/2014/11/08164934/Landscape-Photography-steps.jpg"
+                        class="rounded-circle" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.imgflip.com/707bul.png"
+                        class="rounded-circle" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0163/6622/files/Landscape_Photo_Tips.jpg?v=1660006499"
+                        class="rounded-circle" alt="Image 4">
+                </div>
+                <!-- Add more carousel items with additional images -->
+            </div>
+            <a class="carousel-control-prev" href="#image-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#image-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+            <!-- Scroll Down Button -->
+            <style>
+                #Welcome {
+                    display: none;
+                }
+            </style>
+
+            <a href="#Welcome" onclick="toggleFunction()">
+                <div class="scroll-down"></div>
+            </a>
+
+            <script>
+
+                function toggleFunction() {
+                    var welcomeSection = document.getElementById('Welcome');
+                    var scrollDownButton = document.querySelector('.scroll-down');
+
+                    if (welcomeSection.style.display = 'none') {
+                        welcomeSection.style.display = 'block';
+                        scrollDownButton.style.display = 'none'; // Hide scroll down button
+                    }
+                    else {
+                        welcomeSection.style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+    </section>
+
+</html>
+<script>
+    const languages = [
+        "Hi, ", "Hola, ", "Bonjour, ",
+        "नमस्ते, ", "നമസ്കാരം, ", "வணக்கம், ",
+        "నమస్తే, ", "ಹಲೋ, ", "مرحبا, ", "Hallo, ",
+        "Përshëndetje, ", "ሰላም, ", "Բարև, ",
+        "Salam, ", "Kaixo, ", "নমস্কার, ",
+        "Kuzu zangpo la, ", "Zdravo, ",
+        "Здравейте, ", "ဟယ်လို, ", "ជំរាបសួរ, ",
+        "哈囉, ", "Moni, ", "Bok, ",
+        "Ahoj, ", "Hej, ", "Tere, ",
+        "سلام, ", "Bula, ", "Hei, ",
+        "გამარჯობა, ", "Γεια σας, ", "Sannu, ",
+        "Aloha, ", "שלום, ", "Nyob zoo, ",
+        "Szia, ", "Halló, ", "Ndewo, ",
+        "Halo, ", "Ciao, ", "こんにちは, ",
+        "Сәлеметсіз бе, ", "ສະບາຍດີ, ", "Muraho, ",
+        "Moa oti, ", "안녕하세요, ", "Салам, ",
+        "ສະບາຍດີ, ", "Sveiki, ", "Wabula, ",
+        "Здраво, ", "Manao ahoana, ",
+        "Hai, ", "你好, ", "Kia ora, ",
+        "Yokwe, ", "Сайн байна уу, ", "Sawubona, ",
+        "Hei, ", "Moni, ", "Akkam, ",
+        "Cześć, ", "Olá, ", "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ",
+        "Salut, ", "Здравствуйте, ", "Talofa, ",
+        "Здраво, ", "Lumela, ", "Dumela, ",
+        "Mhoro, ", "හෙලෝ, ", "Ahoj, ",
+        "Živijo, ", "Salaam alaykum, ", "Odi, ",
+        "Habari, ", "Kamusta, ", "Салом, ",
+        "สวัสดี, ", "ሰላም, ", "Mālō e lelei, ",
+        "Merhaba, ", "Вітаю, ", "سلام, ",
+        "Salom, ", "Xin chào, ", "Molo, ",
+        "Avuxeni, ", "Bawo ni, "
+        // Add more languages here
+    ];
+
+    const typedTextElement = document.getElementById("typed-text");
+
+    let currentLanguageIndex = 0;
+    let currentCharacterIndex = 0;
+    let isTyping = true;
+
+    function typeText() {
+        const currentLanguage = languages[currentLanguageIndex];
+        const currentText = currentLanguage.substring(0, currentCharacterIndex);
+        typedTextElement.textContent = currentText;
+
+        if (currentCharacterIndex < currentLanguage.length) {
+            currentCharacterIndex++;
+            setTimeout(typeText, 75); // Adjust typing speed (in milliseconds) here
+        } else {
+            isTyping = false;
+            setTimeout(deleteText, 100); // Delay before starting to delete (in milliseconds)
+        }
+    }
+
+    function deleteText() {
+        const currentLanguage = languages[currentLanguageIndex];
+        const currentText = currentLanguage.substring(0, currentCharacterIndex);
+        typedTextElement.textContent = currentText;
+
+        if (currentCharacterIndex > 0) {
+            currentCharacterIndex--;
+            setTimeout(deleteText, 500); // Adjust deleting speed (in milliseconds) here
+        } else {
+            isTyping = true;
+            currentLanguageIndex = (currentLanguageIndex + 1) % languages.length;
+            setTimeout(typeText, 2500); // Delay before typing the next language (in milliseconds)
+        }
+    }
+
+    typeText(); // Start the typing animation
+
+    // JavaScript to control blinking effect
+    const cursor = document.getElementById("cursor");
+    let isCursorVisible = true;
+
+    function blinkCursor() {
+        cursor.style.visibility = isCursorVisible ? "hidden" : "visible";
+        isCursorVisible = !isCursorVisible;
+        setTimeout(blinkCursor, 750); // Adjust blinking speed (in milliseconds) to match typing speed
+    }
+    blinkCursor(); // Start the cursor blinking
+
+</script>
+
+<section id="Welcome" class="Welcome" style="padding-top: 20px;">
+    <h2 class="text-center mt-4" style="font-size: 1.5rem;">Welcome to my personal portfolio!</h2>
+    <div class="container paragraph-container" style="margin-bottom: 0;">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <p class="text-justify" style="margin-bottom: 0;">I'm thrilled to have you here! This portfolio is a
+                    window into my world,
+                    showcasing my passion and projects. I'd love to learn more about you too!
+                    You can contact me using the links below or the contact page above.</p>
+            </div>
+        </div>
+    </div>
+    <div class="iframe-container" style="margin-top: -425px; margin-bottom: 100px; text-align: center;">
+        <iframe src="macaroni.html" width="1000px" height="666px" frameborder="0" style="border-radius: 10px;"></iframe>
+    </div>
+    <style>
+        @media (max-width: 1000px) {
+            .iframe-container {
+                display: none;
+                /* Hide the iframe container on smaller devices */
+            }
+
+            .scroll-down {
+                display: none;
+                /* Hide the scroll down button on smaller devices */
+            }
+
+            .Welcome {
+                display: block !important;
+                /* Display the welcome section on smaller devices */
+            }
+        }
+    </style>
+</section>
+
+<style>
+    /* Media query for phones */
+    @media only screen and (max-width: 600px) {
+
+        html,
+        body {
+            height: 20%;
+            /* Adjusted height for phones */
+        }
+    }
+
+    /* Media query for laptops and larger screens */
+    @media only screen and (min-width: 601px) {
+
+        html,
+        body {
+            height: 140%;
+            /* Adjusted height for laptops */
+        }
+    }
+</style>
+
+<div id="footer"><!-- This is where the footer will be included -->
+    <script>
+        // Fetch and include the navbar using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="tps://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

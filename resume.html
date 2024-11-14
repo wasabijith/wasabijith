@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/Happy Face.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="navbar"></div> <!-- This is where the navbar will be included -->
+    <script>
+        // Fetch and include the navbar using JavaScript
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <!-- Title -->
+    <h2 class="mt-4 text-center">Resume</h2>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center">Here's my resume! You can download it <a href="https://drive.google.com/uc?export=download&id=184Ox1aHeSR_DusB6hKtmwbiCFjqHvE2r">here</a>.</p>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/184Ox1aHeSR_DusB6hKtmwbiCFjqHvE2r/preview"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <div id="footer"> <!-- This is where the footer will be included -->
+    <script>
+        // Fetch and include the footer using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/Happy Face.png" type="image/x-icon">
+    <style>
+        /* Custom CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .rounded-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .awards-table th,
+        .awards-table td {
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .awards-table th:first-child,
+        .awards-table td:first-child {
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div> <!-- This is where the navbar will be included -->
+    <script>
+        // Fetch and include the navbar using JavaScript
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <section id="About Me" class="section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <img src="images/Abijith_Manikandan.jpg" class="rounded-circle" alt="Abi Professional Picture">
+                <h2>About Me</h2>
+                <p>Hey there! I'm Abijith Manikandan, currently a Junior at Kean University, where I'm diving deep into
+                    the world
+                    of Computer Science. One of the coolest experiences I've had so far was being part of the AI4ALL
+                    College Pathways program. It was like unlocking a whole new level in the tech world! I got to
+                    explore machine learning, gradient descent, and neural networks. It was mind-blowing.
+
+                    But that's not all! I also got to do some hands-on research through the CAHSI LREU program. One of
+                    the highlights was presenting my findings at the 2023 GMiS conference in Pasadena, California.
+                    Talk about an adrenaline rush!
+                </p>
+                <p>I'll skip the details for now but you can see more information about these projects and other ones,
+                    under the projects page!
+
+                    I'm also a Code Samurai Tutor and Supplemental Instructor for Computer Science. I love sharing what
+                    I know with fellow
+                    coders and helping them level up their skills. Plus, I'm
+                    always up for tackling those tricky academic concepts together.
+                </p>
+                <p>
+                    When I'm not busy coding or researching, you can probably find me on the soccer field or immersed in
+                    the latest video game. Soccer and gaming are my go-to hobbies—they keep me energized and let me
+                    unwind after a day of tech adventures.
+                </p>
+                <p>
+                    Looking ahead, I'm super excited to keep learning and growing in the tech world. Who knows? Maybe
+                    one day I'll be a top-notch Software Engineer, blending my passion for technology with all the cool
+                    stuff I've learned along the way.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Skills</h2>
+                <ul style="list-style-type: disc; text-align: left; font-size: 21px;">
+                    <li>Fluent in Java, Javascript, HTML, C#, R, RStudio and Python</li>
+                    <li>Proficient in complex problem-solving, innovative solution development, and informed decision-making to enhance project execution and drive continuous improvement</li>
+                    <li>Proven team player and leader with excellent communication skills, fostering collaborative effectiveness and optimizing project outcomes</li>
+                    <li>Able to use government, commercial, and defense software such as STK (Systems Tool Kit) and AGI (Analytical Graphics Inc)</li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+
+    <section id="awards" class="section">
+        <div class="container">
+            <h2 class="text-center mb-4">Awards</h2>
+            <table class="awards-table mx-auto">
+                <tr>
+                    <th  style="text-align: left;">Date</th>
+                    <th  style="text-align: left;">Award</th>
+                </tr>
+                <tr>
+                    <td  style="text-align: left;">September 2023</td>
+                    <td  style="text-align: left;">NSF S-STEM Scholar</td>
+                </tr>
+                <tr>
+                    <td  style="text-align: left;">December 2022</td>
+                    <td  style="text-align: left;">AI4ALL Discover AI</td>
+                </tr>
+                <tr>
+                    <td  style="text-align: left;">November 2019</td>
+                    <td  style="text-align: left;">National Honor Society</td>
+                </tr>
+                <tr>
+                    <td  style="text-align: left;">October 2019</td>
+                    <td  style="text-align: left;">French Honor Society</td>
+                </tr>
+                <tr>
+                    <td  style="text-align: left;">February 2019</td>
+                    <td  style="text-align: left;">Stellar Xplorers</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <div id="footer"> <!-- This is where the footer will be included -->
+        <script>
+            // Fetch and include the footer using JavaScript
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script>
+    </div>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

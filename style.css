@@ -1,0 +1,195 @@
+/* General CSS Styles and Animations */
+html {
+  font-family: SF Pro Display, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: SF Pro Display, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.section {
+  text-align: center;
+}
+
+h1
+{
+ margin: 100px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/* Navbar CSS */
+.navbar {
+  background-color: #333;
+}
+
+/* Hello Typed Text CSS */
+#home {
+  text-align: center;
+  font-family: SF Pro Display, sans-serif;
+}
+
+#typed-text {
+  display: inline-block;
+}
+
+#cursor {
+  font-weight: lighter; /* Make the cursor thinner */
+  animation: blink-animation 1s infinite; /* Apply blinking animation */
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Carousel CSS */
+.carousel-item img {
+  width: 250px; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the circular area */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: calc(50% - 20px); /* Adjust the position of the carousel controls */
+}
+
+/* Paragraph CSS */
+.paragraph-container {
+  height: 60vh; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+/* Scroll Down Button CSS */
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 3px;
+  position: absolute;
+  left: calc(50% - 15px);
+  bottom: -75px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid black;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::after {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+/* Footer CSS */
+footer {
+  background-color: white;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+/* Custom styles for Font Awesome icons */
+.fa {
+  font-size: 25px;
+  color: black;
+  margin: 5px;
+}
+
+/* Scale up icons on hover */
+.fa:hover {
+  transform: scale(1.25);
+  color: black;
+  text-decoration: none;
+}
+
+/* Default body styles */
+html,
+body {
+  height: 100%; /* Default height for devices */
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    height: 175%; /* Adjusted height for phones */
+  }
+}
+
+/* Media query for laptops and larger screens */
+@media only screen and (min-width: 601px) {
+  html,
+  body {
+    height: 140%; /* Adjusted height for laptops */
+  }
+}
+
+.container-fluid {
+  flex: 1;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/Happy Face.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            max-width: 350px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <script>
+        // Fetch and include the navbar using JavaScript
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <!-- Title -->
+    <h2 class="mt-4 text-center">Projects</h2>
+    <h2 class="mt-4 text-center" style="font-size: 1.5rem; font-weight: normal;">Interested? Click the images to see more.</h2>
+
+    <!-- Bootstrap Cards -->
+    <section class="mt-4 d-flex flex-wrap justify-content-center">
+        <div class="card">
+            <a href="https://docs.google.com/presentation/d/1El4A1QRH8qafoWv4ugdUn616cNV2kZD4/edit?usp=sharing&ouid=109692701664968990535&rtpof=true&sd=true">
+                <img src="images/GMIS2023.png" class="card-img-top" alt="GMIS 2023 Research">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">eHMI Effectiveness Tested With Unity Virtual Environment</h5>
+                <p class="card-text">Conducted research on pedestrian-autonomous vehicle interaction, utilizing eHMIs in C# and Unity alongside Python analysis for road safety. Presented findings at the 2023 GMiS conference in Pasadena, California, fostering collaboration with industry leaders.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://docs.google.com/presentation/d/1YgEKlV_Aokeo492e6eC3vqC5dELmwm0INO4yMJPYU1k/edit#slide=id.g1a90aac4e17_0_14">
+                <img src="images/AI4ALL.png" class="card-img-top" alt="AI4ALL Research">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Artificial Intelligence Image Processing Project</h5>
+                <p class="card-text">Led a group of 5 students on a 10-week research project that focused on image processing to provide users with their celebrity look-alikes.</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://studio.code.org/projects/applab/cgNzycuHmu3pJj8YPppHGJJQ_MeeYfXvmknjq3-BaPE">
+                <img src="images/Althea.png" class="card-img-top" alt="Choice-based JavaScript game">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Choice-based JavaScript game</h5>
+                <p class="card-text">Crafted from the inspiration of a short story I authored, this choice-based video game seamlessly merges my love for coding, storytelling, and gaming, resulting in a captivating interactive experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+        // Fetch and include the footer using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="tps://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Click Animation -->
+    <script>
+        $(document).ready(function () {
+            $(".card").click(function () {
+                // Your animation code here
+                // For example, you can use jQuery's animate() function
+                $(this).animate({ opacity: 0 }, 500, function () {
+                    $(this).animate({ opacity: 1 }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
