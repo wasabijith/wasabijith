@@ -1,2 +1,2 @@
-## abijith.github.io
-## Abi's Personal Portfolio
+# abijith.github.io
+Abi's Personal Portfolio
